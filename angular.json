@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "trainman-auto-complete"
+    }
+  },
+  "defaultProject": "trainman-auto-complete",
+  "cli": {
+    "analytics": "e07469c8-7990-4102-81f7-770232187c7e"
+  }
 }
