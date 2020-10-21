@@ -1,7 +1,28 @@
-<p>auto-complete works!</p>
 
-<form name="form" #form="ngForm">
-    <div class="form-group">
-        <input type="text" name="searchBar" ngModel #searchBar="ngModel" placeholder="search.." (keyup)="getMovies($event)" >
-    </div>
-</form>
+  <div class="wrapper boxes" [ngClass]="{'hover': true}" >
+      <p class="heading">Search For Your Favourite Movies and Shows</p>
+      <input  #searchBox (input)="search(searchBox.value)" [(ngModel)]="model" class="searchBox"  placeholder="Search IMDb" value=""/>
+      <ul *ngIf="searchBox.value.length>0 && isVisible" class="search-result " >
+          <li *ngFor="let movie of movies$ ">
+            <div>
+            <img src="{{movie.i.imageUrl}}" alt="imageUrl">
+            </div>
+              <div class="movieTitle">{{movie.l}}</div>
+          </li>
+      </ul> 
+  </div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -3,9 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 // import {AutoCompleteComponent} from './auto-complete/auto-complete.component'
 
 const routes: Routes = [
-  // {path:"", redirectTo:"autoComplete", pathMatch:"full"},
-  // {path:"autoComplete", component:AutoCompleteComponent}
-
 ];
 
 @NgModule({

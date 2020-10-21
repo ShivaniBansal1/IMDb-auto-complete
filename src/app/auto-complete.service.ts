@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
-import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AutoCompleteService {
+  IMDB_URL = "https://rapidapi.p.rapidapi.com/title/auto-complete"
 
   headers: HttpHeaders = new HttpHeaders({
     "x-rapidapi-host": "imdb8.p.rapidapi.com",
@@ -18,12 +18,10 @@ export class AutoCompleteService {
   }
 
   constructor(private http: HttpClient) { }
-  getMovies(char:string): Observable<any>{
-    console.log(char, "char")
-    const params: HttpParams = new HttpParams().set('character', char);
-    return this.http.get<any>(
-      'https://rapidapi.p.rapidapi.com/title/auto-complete',
-      { ...this.options, params }
+  getMovies(char:string){
+    return this.http.get(
+      `${this.IMDB_URL}?q=${char}`,
+      this.options
     )
   }
 }

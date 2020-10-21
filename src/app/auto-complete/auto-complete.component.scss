@@ -1,0 +1,46 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    background-color: rgb(40,40,40);
+    color : white;
+    display: flex;
+    padding: 1em;
+}
+
+li:hover{
+    background-color: rgb(64,64,64); 
+    cursor: pointer;
+}
+
+img{
+    height: 7em;
+}
+
+.movieTitle{
+    padding: 0 1em;
+}
+
+.wrapper{
+    margin: 2% 13% !important;
+}
+
+.searchBox{
+    outline: none;
+    width: 100%;
+    border-color: yellow;
+    padding: 0.3em;
+    border-radius: 1em;
+}
+
+.heading{
+    margin: 1em 0;
+    color: black;
+    font-weight: bolder;
+    font-size: large;
+    font-style: oblique;
+}
+
