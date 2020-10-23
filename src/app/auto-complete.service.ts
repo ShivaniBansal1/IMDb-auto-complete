@@ -9,7 +9,7 @@ export class AutoCompleteService {
 
   headers: HttpHeaders = new HttpHeaders({
     "x-rapidapi-host": "imdb8.p.rapidapi.com",
-    "x-rapidapi-key": "b5e0ad6c24msha0b120218a86690p146a69jsn91c64371fa00",
+    "x-rapidapi-key": "6347e89982msh307f462de939cdcp18874ejsnf576ad9a5010",
     "useQueryString": "true"
   });
 
